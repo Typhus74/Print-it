@@ -91,14 +91,14 @@ const rightArrow = document.querySelector('#banner .arrow_right');
 
 // Ajout d'un gestionnaire d'événement click à la flèche gauche
 leftArrow.addEventListener('click', () => {
-  console.log(("vous avez cliqué sur le Arrow de Droite"));
+  console.log(("vous avez cliqué sur le Arrow de gauche"));
   // Appel de la fonction changeSlides avec l'argument 'prev' pour passer à la diapositive précédente
   changeSlides('prev');
 });
 
 // Ajout d'un gestionnaire d'événement click à la flèche droite
 rightArrow.addEventListener('click', () => {
-  console.log(("vous avez cliqué sur le Arrow de Gauche"));
+  console.log(("vous avez cliqué sur le Arrow de droite"));
   // Appel de la fonction changeSlides avec l'argument 'next' pour passer à la diapositive suivante
   changeSlides('next');
 });
