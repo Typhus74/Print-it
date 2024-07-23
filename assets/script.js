@@ -56,8 +56,10 @@ function updateSlide(index) {
 function changeSlides(direction) {
   if (direction === 'next') {
     currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+    console.log("Bravo vous pouvez faire une boucle")
   } else if (direction === 'prev') {
     currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+    console.log("Bravo vous pouvez faire une boucle")
   }
   updateSlide(currentSlideIndex);
 }
