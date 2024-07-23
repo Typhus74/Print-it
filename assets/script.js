@@ -31,6 +31,7 @@ function updateSlide(index) {
     // Mise à jour de chaque image du carrousel avec la nouvelle image et l'attribut alt
     image.src = `./assets/images/slideshow/${slides[index].image}`;
     image.alt = `Banner Print-it${slides[index].image}`;
+    console.log(image.src);
   });
 
   // updateSlide(0); // Met à jour les images avec les informations de la première diapositive
@@ -90,12 +91,14 @@ const rightArrow = document.querySelector('#banner .arrow_right');
 
 // Ajout d'un gestionnaire d'événement click à la flèche gauche
 leftArrow.addEventListener('click', () => {
+  console.log(image.src);
   // Appel de la fonction changeSlides avec l'argument 'prev' pour passer à la diapositive précédente
   changeSlides('prev');
 });
 
 // Ajout d'un gestionnaire d'événement click à la flèche droite
 rightArrow.addEventListener('click', () => {
+  console.log(image.src);
   // Appel de la fonction changeSlides avec l'argument 'next' pour passer à la diapositive suivante
   changeSlides('next');
 });
